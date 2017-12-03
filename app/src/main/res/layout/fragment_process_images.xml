@@ -1,0 +1,31 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProcessImagesFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteY="8dp">
+    <TextView
+    android:id="@+id/resultsText"
+    android:layout_width="201dp"
+    android:layout_height="45dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="15dp"
+    android:layout_marginLeft="10dp"
+    android:text="BDI: "
+    android:textSize="25dp"/>
+
+    <Button
+        android:id="@+id/process_images"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/resultsText"
+        android:text="Process Images"
+        android:textSize="4.5pt" />
+    </RelativeLayout>
+</FrameLayout>

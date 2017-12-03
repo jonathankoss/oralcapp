@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_get_image"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jonkoss.oralcancerdetection.GetImageFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="TextView" />
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="175dp"
+        android:layout_height="140dp"
+        android:layout_marginLeft="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/titleText"
+        app:srcCompat="@android:color/background_light" />
+    <Button
+        android:id="@+id/take_picture"
+        android:layout_width="85dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        android:text="Take Picture"
+        android:textSize="8dp" />
+    <Button
+        android:id="@+id/choose_picture"
+        android:layout_width="85dp"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@id/take_picture"
+        android:layout_alignTop="@id/take_picture"
+        android:layout_marginLeft="5dp"
+        android:text="Choose Picture"
+        android:textSize="8dp" />
+
+</RelativeLayout>

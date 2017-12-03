@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jonkoss.oralcancerdetection.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteY="8dp">
+
+        <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/GridLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:orientation="horizontal"
+            android:rowCount="2"
+            tools:context=".GridXMLActivity">
+
+            <fragment
+                android:id="@+id/get_image_fragment_left_cy3"
+                android:name="com.jonkoss.oralcancerdetection.GetImageFragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|top"
+                android:layout_weight="1" />
+
+            <fragment
+                android:id="@+id/get_image_fragment_right_cy3"
+                android:name="com.jonkoss.oralcancerdetection.GetImageFragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|top"
+                android:layout_weight="1" />
+
+            <fragment
+                android:id="@+id/get_image_fragment_left_egfp"
+                android:name="com.jonkoss.oralcancerdetection.GetImageFragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|top"
+                android:layout_weight="1" />
+
+            <fragment
+                android:id="@+id/get_image_fragment_right_egfb"
+                android:name="com.jonkoss.oralcancerdetection.GetImageFragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|top"
+                android:layout_weight="1" />
+
+        </GridLayout>
+
+        <fragment
+            android:id="@+id/fragment_process_images"
+            android:name="com.jonkoss.oralcancerdetection.ProcessImagesFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|top"
+            android:layout_weight="1"
+            android:layout_below="@id/GridLayout"/>
+
+        <!--<TextView-->
+            <!--android:id="@+id/resultsText"-->
+            <!--android:layout_width="201dp"-->
+            <!--android:layout_height="45dp"-->
+            <!--android:layout_marginRight="5dp"-->
+            <!--android:layout_marginTop="15dp"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:text="R value:  "-->
+            <!--android:textSize="25dp"-->
+            <!--android:layout_below="@id/GridLayout"/>-->
+
+        <!--<Button-->
+            <!--android:id="@+id/process_images"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_marginRight="5dp"-->
+            <!--android:layout_marginTop="15dp"-->
+            <!--android:layout_toRightOf="@id/resultsText"-->
+            <!--android:text="Process Images"-->
+            <!--android:textSize="4.5pt"-->
+            <!--android:layout_below="@id/GridLayout"/>-->
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
